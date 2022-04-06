@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>E-Commerce | Abbout Us</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="1stoplogo.png" width="150"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+             <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contacts</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+
+    <div class="about_us">
+        <h2>About Us</h2>
+        <div class="about_content">
+            <p>Hello and Welcome to 1stop ai<br>
+                 The place to find the best products for every need and occasion. We thoroughly check the quality of our goods, working only with reliable suppliers so
+                 that you only receive the best quality product.
+
+                 We believe in high quality and exceptional customer service. But most importantly, we believe shopping is a right, not a luxury,so we strive to deliver 
+                 the best products at the most affordable prices, and ship them to you regardless of where you are located.
+            </p>
+        </div>
+    <hr>
+        <h2>Our Mission</h2>
+        <p>Our missiion is to provide our customers with high quality yet budget-friendly products. We offer all of this while providing excellent customer service 
+            and friendly support.
+            We always keep an eye on the latest trends and put our customers’ wishes irst. That is why we have satisfied customers all over the world, and are thrilled
+             to be a part of the this industry.<br> 
+            The interests of our customers are always top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you.
+    <hr>
+        <h2>Our Vision</h2>
+        <p>Our Vision lies to bring in a best producs as per our customers need<br> with Great price and Discounts.
+            <br><br>
+            ”Spend Less,Live Better"
+
+        </p>
+    </div>
+
+    <div class="feedback">
+        <h2>Write a review</h2>
+        <div class="feedback_form">
+            <form name="submit-googlesheet">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email Id"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7"name="Review"  placeholder="Write a review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer_logo">
+        <a href="index.html"><img src="1stoplogo.png" width="150"></a>
+    </div>
+    <div class="pages">
+        <h3>Pages</h3>
+        <a href="about.html">About Us</a>|
+        <a href="service.html">Services</a>|
+        <a href="blog.html">Blogs</a>|
+        <a href="login.html">Login</a>|
+        <a href="login.html">Sign Up</a>
+    </div>
+    <div class="doc">
+        <h3>Documentd</h3>
+        <a href="">Privacy Policy</a>|
+        <a href="">Terms Of Use</a>|
+        <a href="">Refund Policy</a>
+    </div>
+    <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/1Stopai-102490171820303" target=_black><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/company/1stop-ai" target=_black><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/1stop.ai" target=_black><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/onestopai" target=_black><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://api.WhatsApp.com/send?phone=+919838623258" target=_black><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="tel:+919838723258"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto: support@1stop.ai"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <hr>
+    <p>Copyright &copy; 2021 1stop All rights reserved</p>
+</footer>
+
+<script type="text/JavaScript"> 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby3d-kGog1UjjT3wRKWA2Np71HJtNNWFGzS1aVNuAVf8mg7itc6rY6tGaVdl533lMA/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks you for the review....! Have a nice day ahead....!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+
+</body>
+  
+</html>
